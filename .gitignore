@@ -1,0 +1,20 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略数据集图片 (GitHub 不适合存大量图片)
+# 假设你的 train 和 test 文件夹里全是图片，建议忽略
+# 如果里面只有代码，就不要忽略这两行
+train/**/*.jpg
+train/**/*.png
+train/**/*.bmp
+test/**/*.jpg
+test/**/*.png
+test/**/*.bmp
+
+# 忽略系统生成文件
+.DS_Store
+
+# 忽略大型权重文件 (如果模型大于100MB，GitHub会报错)
+# 如果你想上传训练好的模型，确保它小于100MB，或者使用 Git LFS
+# *.pth
